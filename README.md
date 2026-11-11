@@ -2,11 +2,11 @@
 
 > 🇬🇧 English · 🇻🇳 Tiếng Việt: each section gives English first, then Vietnamese. / Mỗi phần có tiếng Anh trước, tiếng Việt sau.
 
-**EN:** **Saltline** is a first-person 3D shooter that runs in the browser. The whole game is in one file, [saltline.html](saltline.html): HTML, CSS, JavaScript, shaders and a 3D engine.
+**EN:** **Saltline** is a first-person 3D shooter that runs in the browser. The whole game is in one file, [index.html](index.html): HTML, CSS, JavaScript, shaders and a 3D engine.
 
 You play the *Breacher*, sent into a rainy, wet port at night. The *Harbormaster* is a machine that has taken over the berth. Your job is to cut its three uplink relays (in the **yard**, the **shed** and the **quay**) while fighting off its machines: **Gulls** fly and **Hounds** walk. When all three relays are dark, run to the boat waiting at the ladder at the south end of the quay.
 
-**VI:** **Saltline** là game bắn súng góc nhìn thứ nhất (FPS) 3D chạy ngay trên trình duyệt. Toàn bộ game nằm trong một file duy nhất, [saltline.html](saltline.html): HTML, CSS, JavaScript, shader và engine 3D.
+**VI:** **Saltline** là game bắn súng góc nhìn thứ nhất (FPS) 3D chạy ngay trên trình duyệt. Toàn bộ game nằm trong một file duy nhất, [index.html](index.html): HTML, CSS, JavaScript, shader và engine 3D.
 
 Bạn vào vai *Breacher*, đột nhập một bến cảng ẩm ướt trong đêm mưa. *Harbormaster* là một cỗ máy đã chiếm quyền kiểm soát bến. Nhiệm vụ của bạn là cắt ba trạm relay của nó (ở **bãi container**, **nhà kho** và **cầu cảng**), đồng thời chống lại lũ máy của nó: **Gull** bay trên không, **Hound** đi dưới đất. Khi cả ba relay đã tắt, hãy chạy tới chiếc thuyền đang chờ ở thang cầu cảng, đầu phía nam.
 
@@ -16,13 +16,13 @@ Bạn vào vai *Breacher*, đột nhập một bến cảng ẩm ướt trong đ
 
 **EN:** No install or build step is needed.
 
-- **Quickest:** open `saltline.html` in a recent Chrome, Edge, Firefox or Safari.
-- **With a local server** (recommended while editing): use the VS Code *Live Server* extension, or run the command below, then open `http://localhost:<port>/saltline.html`.
+- **Quickest:** open `index.html` in a recent Chrome, Edge, Firefox or Safari.
+- **With a local server** (recommended while editing): use the VS Code *Live Server* extension, or run the command below, then open `http://localhost:<port>/`.
 
 **VI:** Không cần cài đặt hay build gì cả.
 
-- **Nhanh nhất:** mở `saltline.html` bằng Chrome, Edge, Firefox hoặc Safari bản mới.
-- **Dùng server cục bộ** (nên dùng khi đang sửa code): dùng extension *Live Server* của VS Code, hoặc chạy lệnh dưới đây rồi mở `http://localhost:<port>/saltline.html`.
+- **Nhanh nhất:** mở `index.html` bằng Chrome, Edge, Firefox hoặc Safari bản mới.
+- **Dùng server cục bộ** (nên dùng khi đang sửa code): dùng extension *Live Server* của VS Code, hoặc chạy lệnh dưới đây rồi mở `http://localhost:<port>/`.
 
 ```bash
 npx serve .        # or / hoặc: python3 -m http.server
@@ -90,7 +90,7 @@ npx serve .        # or / hoặc: python3 -m http.server
 
 ## File layout / Cấu trúc file
 
-**EN:** `saltline.html` is organized as follows:
+**EN:** `index.html` is organized as follows:
 
 1. `<head>`: meta tags, Google Fonts, and the `<style>` block for the UI (boot screen, HUD, radio, touch controls, menus, settings panel, narrow screens, motion preferences).
 2. HTML skeleton: boot screen, title screen, pause / death / debrief cards, settings and controls panel.
@@ -98,7 +98,7 @@ npx serve .        # or / hoặc: python3 -m http.server
 
 Most of the JavaScript is minified bundle output. When you need to change behaviour, it is easier to edit the readable parts (CSS, HTML, GLSL comments and strings).
 
-**VI:** `saltline.html` được chia như sau:
+**VI:** `index.html` được chia như sau:
 
 1. `<head>`: thẻ meta, Google Fonts và khối `<style>` cho giao diện (màn hình khởi động, HUD, radio, nút cảm ứng, menu, bảng cài đặt, màn hình hẹp, tùy chọn chuyển động).
 2. Khung HTML: màn hình khởi động, màn hình tiêu đề, các thẻ tạm dừng / thua / tổng kết, bảng cài đặt và điều khiển.
